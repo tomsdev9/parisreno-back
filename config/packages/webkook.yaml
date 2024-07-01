@@ -1,0 +1,7 @@
+# config/packages/webhook.yaml
+framework:
+  webhook:
+    routing:
+      mailer_resend:
+        service: 'mailer.webhook.request_parser.resend'
+        secret: '%env(MAILER_RESEND_SECRET)%'
